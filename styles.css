@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Outfit:wght@200;300;500;900&display=swap');
 
+@font-face {
+    font-family: "Grenze Gotisch";
+    src: url('fonts/GrenzeGotisch-Regular.woff2');
+}
+
+@font-face {
+    font-family: "Grenze Gotisch";
+    src: url('fonts/GrenzeGotisch-Bold.woff2');
+    font-weight: bold;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -21,6 +32,7 @@
 
     --bitter:Bitter, Georgia, 'Times New Roman', Times, serif;
     --outfit:Outfit, Geneva, Verdana, sans-serif;
+    --grenze-gotisch: "Grenze Gotisch", 'Times New Roman', Times, serif;
 }
 html{
     scroll-behavior:smooth;
@@ -84,10 +96,21 @@ header{
     height:90px;
 }
 h1{
+    font-family: var(--grenze-gotisch);
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
     margin:0;
     text-align:center;
     position:relative;
     top:-10px;
+    -webkit-text-stroke: 0.020em black;
+    color: var(--bone);
+    line-height: 1;
+    font-size: 80px;
+    text-decoration: none;
+    transition: all 500ms ease-out;
+    white-space: nowrap;
 }
 .batty{
     margin:0 auto;
@@ -226,14 +249,14 @@ footer small{
 }
 .header-main .header-div>a{
     height:90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
-.header-main .zach-heading img{
-    width:566px;
-    transition:width 500ms;
-    transition-timing-function: ease-out;
-}
-.header-main .zach-heading img:hover{
-    width:630px;
+.header-main .zach-heading:hover{
+    font-size: 90px;
+    top:-5px;
 }
 .header-main .header-div .nav-div1{
     background-image:linear-gradient(to right, hsla(230, 8%, 14%, 0%), hsla(230, 8%, 14%, 80%) 10%);
@@ -243,6 +266,10 @@ footer small{
 .header-main .nav-div1 nav ul{
     text-align:center;
     margin-top:2.7rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .header-main .nav-div1 ul li a{
     text-decoration: underline 2px rgba(114, 129, 110,0);
@@ -949,13 +976,14 @@ span.email{
     }
 
     h1{
-        top:0;
+        top:-5px;
     }
-    .header-main .zach-heading img{
-        width:440px;
+    .header-main .zach-heading {
+        font-size: 60px;
     }
-    .header-main .zach-heading img:hover{
-        width:500px;
+    .header-main .zach-heading:hover {
+        font-size: 70px;
+        top: 0;
     }
 
     /*categories*/
@@ -1007,6 +1035,9 @@ span.email{
     .header-main .header-div{
         height:13vw;
     }
+    .header-main .header-div > a {
+        height:13vw;
+    }
     .header-main .header-div .batty a img{
         width:18vw;
         filter: drop-shadow(0 4px 8px var(--lilac));
@@ -1014,12 +1045,10 @@ span.email{
     .header-main .zach-heading{
         position:relative;
         z-index:997;
+        font-size: 40px;
     }
-    .header-main .zach-heading img{
-        width:64vw;
-    }
-    .header-main .zach-heading img:hover{
-        width:64vw;
+    .header-main .zach-heading:hover{
+        font-size: 40px;
     }
     .nav-div1, .nav-div2{
         display:none;
