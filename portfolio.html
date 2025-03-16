@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Hello | Bronwyn Howell</title>
+</head>
+
+<body class="body-main">
+    <header class="header-main">
+        <div class="header-div">
+            <div class="batty">
+                <a href="index.html">
+                    <img src="images/batty.svg" width="240">
+                </a>
+            </div>
+            <a href="index.html">
+                <h1 class="zach-heading">
+                    Bronwyn Howell
+                </h1>
+            </a>
+            <div class="nav-div1">
+                <nav class="main-nav">
+                    <ul>
+                        <li id="navPortfolio">
+                            <a id="porLink" class="active-link" href="portfolio">Portfolio</a>
+                        </li>
+                        <li id="navAbout">
+                            <a id="abtLink" href="about">About</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav-mob1">
+                <a href="#" class="toggle-nav">
+                    <span id="hamburger">☰</span>
+                    <span id="close" class="hidden">×</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div id="navMob2" class="hidden">
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="#" id="prtLink">Portfolio</a></li>
+                <li><a href="#" id="aboLink">About</a></li>
+            </ul>
+            <ul class="prtMenu hidden">
+                <li><a href="webdev" id="webLink">Web Development</a></li>
+                <li><a href="illusmation" id="illLink">Illustration &amp; Animation</a></li>
+                <li><a href="videography" id="vidLink">Videography</a></li>
+                <li>
+                    <div class="mob-socials">
+                        <a href="https://github.com/zawiho" target="_blank">
+                            <img src="images/giticon.svg" width="50">
+                        </a>
+                        <a href="https://www.linkedin.com/in/zachary-howell-she-her/" target="_blank">
+                            <img src="images/liicon.svg" width="50">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="aboMenu hidden">
+                <li><a href="about#" id="bioLink">About Me</a></li>
+                <li><a href="about#expanchor" id="wrkLink">Work Experience</a></li>
+                <li><a href="about#name" id="conLink">Contact</a></li>
+                <li>
+                    <div class="mob-socials">
+                        <a href="https://github.com/zawiho" target="_blank">
+                            <img src="images/giticon.svg" width="50">
+                        </a>
+                        <a href="https://www.linkedin.com/in/zachary-howell-she-her/" target="_blank">
+                            <img src="images/liicon.svg" width="50">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="nav-div2">
+        <nav id="portfolioNav" class="cat-nav">
+            <ul class="categories">
+                <li id="first">
+                    <a href="webdev.php">Web Development</a>
+                </li>
+                <li id="second">
+                    <a href="illusmation.php">Illustration & Animation</a>
+                </li>
+                <li id="third">
+                    <a href="videography.php">Videography</a>
+                </li>
+            </ul>
+        </nav>
+        <nav id="aboutNav" class="cat-nav hidden">
+            <ul>
+                <li id="aboutLink">
+                    <a href="about.php">About Me</a>
+                </li id="expLink">
+                <li>
+                    <a href="about.php#expanchor">Work Experience</a>
+                </li>
+                <li id="contactLink">
+                    <a href="about.php#name">Contact</a>
+                </li>
+            </ul>
+        </nav>    
+    </div>
+
+    <main class="project portfolio-main">
+        <section class="web-gallery">
+            <h2 class="gallery-h2" id="webH2">Web Development</h2>
+                <div class="related related1">
+                    <div class="side-scroll">
+                        <a href="dino.php" class="thumb">
+                            <img src="images/dino-thumb.jpg" alt="Ancient Avians JavaScript Boardgame" width=300>
+                            <h5>"Ancient Avians"</h5>
+                            <h6>JavaScript Boardgame</h6>
+                        </a>
+                        <a href="greenleaf.php" class="thumb">
+                            <img src="images/gl-thumb.jpg" alt="Greenleaf eCommerce Prototype Website" width=300>
+                            <h5>"greenleaf"</h5>
+                            <h6>eCommerce Prototype Website</h6>
+                        </a>
+                        <a href="renew.php" class="thumb">
+                            <img src="images/renew-thumb.jpg" alt="Renew Alberta Social Issue Campaign Webpage" width=300>
+                            <h5>"renewAlberta"</h5>
+                            <h6>Social Issue Campaign Webpage</h6>
+                        </a>
+                        <a href="tips.php" class="thumb">
+                            <img src="images/tips-thumb.jpg" alt="JavaScript Tip Calculator" width=300>
+                            <h5>"Tip Calculator"</h5>
+                            <h6>JavaScript Web App</h6>
+                        </a>
+                        <a href="swr.php" class="thumb">
+                            <img src="images/swr-thumb.jpg" alt="Spirit Winds Ranch WordPress Website" width=300>
+                            <h5>"Spirit Winds Ranch"</h5>
+                            <h6>Non-profit Client WordPress Site</h6>
+                        </a>
+                        <a href="shang.php" class="thumb">
+                            <img src="images/shang-thumb.jpg" alt="Shangri-La Resort WordPress Website" width=300>
+                            <h5>"Shangri-La Resort"</h5>
+                            <h6>WordPress Site</h6>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <section class="illus-gallery">
+            <h2 class="gallery-h2" id="illH2">Illustration & Animation</h2>
+                <div class="related  related2">
+                    <div class="side-scroll">
+                        <a href="kitten.php" class="thumb">
+                            <img src="images/kitten-thumb.jpg" alt="Kitten is Angry Music Video" width=300>
+                            <h5>"Kitten is Angry"</h5>
+                            <h6>Music Video</h6>
+                        </a>
+                        <a href="dino.php" class="thumb">
+                            <img src="images/dino-thumb.jpg" alt="Ancient Avians JavaScript Boardgame" width=300>
+                            <h5>"Ancient Avians"</h5>
+                            <h6>JavaScript Boardgame</h6>
+                        </a>
+                        <a href="budbud.php" class="thumb">
+                            <img src="images/budbud-thumb.jpg" alt="Bud Bud Explainer Animation" width=300>
+                            <h5>"Bud Bud"</h5>
+                            <h6>Explainer Animation</h6>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <section class="video-gallery">
+            <h2 class="gallery-h2" id="vidH2">Videography</h2>
+                <div class="related  related3">
+                    <div class="side-scroll">
+                        <a href="courage1.php" class="thumb">
+                            <img src="images/courage1-thumb.jpg" alt="Camp Courage Calgary Highlight Video #1" width=300>
+                            <h5>"Camp Courage Calgary"</h5>
+                            <h6>Highlight Video #1</h6>
+                        </a>
+                        <a href="courage2.php" class="thumb">
+                            <img src="images/courage2-thumb.jpg" alt="Camp Courage Calgary Highlight Video #2" width=300>
+                            <h5>"Camp Courage Calgary"</h5>
+                            <h6>Highlight Video #2</h6>
+                        </a>
+                        <a href="tremolo.php" class="thumb">
+                            <img src="images/tremolo-thumb.jpg" alt="Tremolo eLearning Guitar Course" width=300>
+                            <h5>"Tremolo"</h5>
+                            <h6>Guitar eLearning</h6>
+                        </a>
+                        <a href="kitten.php" class="thumb">
+                            <img src="images/kitten-thumb.jpg" alt="Kitten is Angry Music Video" width=300>
+                            <h5>"Kitten is Angry"</h5>
+                            <h6>Music Video</h6>
+                        </a>
+                        <a href="wyatt.php" class="thumb">
+                            <img src="images/wyatt-thumb.jpg" alt="Wyatt C. Louis Mini-Documentary" width=300>
+                            <h5>"Wyatt C. Louis"</h5>
+                            <h6>Mini-Documentary</h6>
+                        </a>
+                        <a href="budbud.php" class="thumb">
+                            <img src="images/budbud-thumb.jpg" alt="Bud Bud Explainer Animation" width=300>
+                            <h5>"Bud Bud"</h5>
+                            <h6>Explainer Animation</h6>
+                        </a>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <script>
+        const container1 = document.querySelector('.related1');
+
+        container1.addEventListener('wheel', (event) => {
+            event.preventDefault();
+            container1.scrollLeft += event.deltaY;
+        });
+        const container2 = document.querySelector('.related2');
+
+        container2.addEventListener('wheel', (event) => {
+            event.preventDefault();
+            container2.scrollLeft += event.deltaY;
+        });
+        const container3 = document.querySelector('.related3');
+
+        container3.addEventListener('wheel', (event) => {
+            event.preventDefault();
+            container3.scrollLeft += event.deltaY;
+        });
+    </script>
+
+    <div class="socials">
+        <a href="https://github.com/zawiho" target="_blank">
+            <img src="images/git.png" width="25">
+        </a>
+        <a href="https://www.linkedin.com/in/zachary-howell-she-her/" target="_blank">
+            <img src="images/linked.png" width="25">
+        </a>
+    </div>
+
+    <p id="zackToTop">Back to Top</p>
+    <div class="footer-img">
+        <a href="#">
+            <img id="monogram" src="images/logo.png" alt="Bronwyn Howell logo" width="80">
+        </a>
+    </div>
+    <footer>
+        <small>Copyright © 2025, Bronwyn Howell. All Rights Reserved.</small>
+    </footer>
+
+    <script src="nav.js"></script>
+    <script src="foot.js"></script>
+    <script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpsh-oh' }, { 'server': 'p3plzcpnl454192' }, { 'dcenter': 'p3' }, { 'cp_id': '9094106' }, { 'cp_cache': '' }, { 'cp_cl': '8' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
+    <script src="scc-c2.min.js"></script>
+</body>
+
+</html>
