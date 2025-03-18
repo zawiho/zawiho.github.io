@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media | renewAlberta</title>
+    <link rel="icon" type="image/x-icon" href="renewimages/renewicon.svg">
+    <link rel="stylesheet" href="renewstyles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Get Back to Green</h1>
+            <p>The Government of Canada is committed to achieving net-zero emissions by the year 2050. </p>
+            <p>As Canada's largest contributor to greenhouse gases, there are many changes Alberta needs to implement in order to achieve this goal.</p>
+        </div>
+        <div>
+            <img src="renewimages/renew.png" alt="renewAlberta logo" width="300">
+        </div>
+    </header>
+
+<!--Modal Windows-->
+    <div id="infographicModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal1" class="close">&times;</span>
+            <img src="renewimages/infographic.png" alt="Infographic by Juliette Wilson" width="595">
+        </div>
+    </div>
+
+    <div id="billboardModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal2" class="close">&times;</span>
+            <img src="renewimages/mockup.png" alt="Renew Alberta Billboard by Max Williams" width="1000">
+        </div>
+    </div>
+
+<!--Main-->
+<main>    
+    <section class="countdown">
+    <h2>COUNTDOWN TO NET-ZERO</h2>
+        <div class="timer">
+            <div>
+                <p class="label">Years</p>
+                <p id="years" class="count"></p>
+            </div>
+            <div>
+                <p class="label">Days</p>
+                <p id="days" class="count"></p>
+            </div>
+            <div>
+                <p class="label">Hours</p>
+                <p id="hours" class="count"></p>
+            </div>
+            <div>
+                <p class="label">Minutes</p>
+                <p id="mins" class="count"></p>
+            </div>
+            <div>
+                <p class="label">Seconds</p>
+                <p id="secs" class="count"></p>
+            </div>
+
+            <p id="end" class="hidden"></p>
+        </div>
+    </section>
+
+    <button id="one" class="accordionButton">Explainer Animation</button>
+    <article id="animation" class="hidden">
+        <h4>Andrea Marquez</h4>
+        <div>
+            <video width="500" controls playsinline preload="metadata" poster="renewimages/netzero.jpg">
+                <source src="video/netzero.mp4">
+            </video>
+            <p>Canada has joined the top countries that are taking the lead towards making our world a better place to live by recovering what's left of a healthy environment. With the growing pollution and greenhouse gas emissions caused by the Agriculture and Energy industries, there is extremely urgent work that needs to be done. However, while there are a few people to hold accountable for this damage, the responsibility to change the course of action is everybody's. With this video animation, we aim to communicate that message and inform people on this issue and some of the solutions available out there, and hopefully, they will want to join the cause.</p>
+        </div>
+
+    </article>
+
+    <button id="two" class="accordionButton">Infographic</button>
+    <article id="infographic" class="hidden">
+        <h4>Juliette Wilson</h4>
+        <div>
+            <img src="renewimages/infographic.png" alt="Infographic by Juliette Wilson" id="infoG" width="500">
+            <p>Fossil fuels generate most of Alberta's electricity, creating a problematic demand for metallurgical open-pit coal mining. Open-pit coal mining has adverse effects on wildlife and headwater pollution in Alberta. The toxic concentrations of selenium released into the water cause irreversible damage to mammals, birds, and fish. Headwaters are considered the starting point of all rivers and streams. 90% of Alberta's drinking and irrigation water comes from Alberta's mountain headwaters, they are also a critical part of the wildlife habitat. There are nearly 1000 active coal lease applications targeting headwaters in the mountains and foothills of Alberta. Alberta is Canada's leading wind energy producer, and wind capacity is projected to continue growing. Protect our headwaters against open-pit coal mining and advocate for renewable energy sources like wind power.</p>
+        </div>
+
+    </article>
+
+    <button id="three" class="accordionButton">Print Graphics</button>
+    <article id="graphics" class="hidden">
+        <h4>Max Williams</h4>
+        <div>
+            <div class="carousel">
+                <button id="back" class="carouselButton">&#8592;</button>
+        
+                <img src="renewimages/mockup500.png" alt="Renew Alberta Billboard by Max Williams" id="displayedImage" width="500">
+                
+                <button id="next" class="carouselButton">&#8594;</button>
+            </div>
+            <p>As Alberta takes the steps to achieve the Canadian net-zero goal, it is crucial that Albertans are educated on the ways they can contribute. Despite Alberta being widely notorious for its roots in oil and gas, projects are already in the works for the province to have 30% of its energy generated by natural sources by the year 2030. The transition to renewable energy in Canada will be a difficult, lengthy, and expensive process, but it is far from unachievable. Billboards like this help to communicate this message to Albertans, and get them thinking about what it will take to achieve natural sustainability through net-zero.</p>
+        </div>
+
+    </article>
+</main>
+
+    <footer>
+        <h5>Resources</h5>
+        <div class="footer-div">
+            <div>
+                <a href="https://liberal.ca/climate/clean-electricity-a-net-zero-grid-by-2035/">A Net-Zero Grid by 2035</a>
+                <br>
+                <a href="https://www.cer-rec.gc.ca/en/data-analysis/energy-commodities/electricity/report/canadas-renewable-power/provinces/renewable-power-canada-alberta.html">Canada's Renewable Power</a>
+            </div>
+
+            <div>
+                <a href="https://canadians.org/analysis/effects-coal-mining-alberta-would-ripple-throughout-prairies/">Effects of Coal Mining in Alberta</a>
+                <br>
+                <a href="https://y2y.net/work/hot-projects/alberta-headwaters/">Safeguarding Headwaters in Alberta</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <div>
+                <img src="renewimages/logo2.png" alt="renewAlberta logo" width="150" class="logo">
+            </div> 
+            <small>Copyright &copy; renewAlberta 2023. All Rights Reserved</small>
+        </div>
+    </footer>
+
+    <script>
+        //Countdown
+        //set datetime to count down to
+        var countDownDate = new Date("Jan 01, 2050 00:00:01").getTime();
+
+        //run myfunc every second
+        var myfunc = setInterval(function(){
+            var now = new Date().getTime();
+            var timeleft = countDownDate - now;
+
+            //calculate days, hours, minutes, and seconds remaining
+            var secondsLeft = Math.floor((timeleft%(1000*60))/1000);
+            var minutesLeft = Math.floor((timeleft%(1000*60*60))/(1000*60));
+            var hoursLeft = Math.floor((timeleft%(1000*60*60*24))/(1000*60*60));
+            var daysLeft = Math.floor(timeleft/(1000*60*60*24));
+            var yearsLeft = 0;
+            if(daysLeft>365){
+                yearsLeft = Math.floor(daysLeft/365);
+                daysLeft = daysLeft % 365;
+            }
+
+            //result is output to the corresponding element
+            document.getElementById("years").innerHTML=yearsLeft
+            document.getElementById("days").innerHTML=daysLeft
+            document.getElementById("hours").innerHTML=hoursLeft
+            document.getElementById("mins").innerHTML=minutesLeft
+            document.getElementById("secs").innerHTML=secondsLeft
+
+            //display message when countdown is over
+            if(timeleft<0){
+                clearInterval(myfunc);
+                document.getElementById("years").innerHTML=""
+                document.getElementById("days").innerHTML=""
+                document.getElementById("hours").innerHTML=""
+                document.getElementById("mins").innerHTML=""
+                document.getElementById("secs").innerHTML=""
+                document.getElementById("end").innerHTML="TIME'S UP";
+                document.getElementById("end").classList.remove("hidden")
+            }
+
+        }, 1000);
+
+        //-----------------------------------------------------------------
+
+        //Accordion
+        one.addEventListener('click',function(){
+            animation.classList.toggle("hidden");
+            infographic.classList.add("hidden");
+            graphics.classList.add("hidden");
+        })
+
+        two.addEventListener('click',function(){
+            infographic.classList.toggle("hidden");
+            animation.classList.add("hidden");
+            graphics.classList.add("hidden");
+        })
+
+        three.addEventListener('click',function(){
+            graphics.classList.toggle("hidden");
+            animation.classList.add("hidden");
+            infographic.classList.add("hidden");
+        })
+
+        //-----------------------------------------------------------------
+
+        //Carousel
+        const gallery=["mockup500.png", "billboard500.png"];
+        let i=0;
+
+        function changeImage(){
+            displayedImage.src="renewimages/"+gallery[i];
+        }
+
+        back.addEventListener('click',function(){
+            if(i>0){
+                i--;
+            }
+            else if(i==0){
+                i=gallery.length-1;
+            }
+
+            changeImage();
+        })
+
+        next.addEventListener('click',function(){
+            if(i<gallery.length-1){
+                i++;
+            }
+            else if(i==gallery.length-1){
+                i=0;
+            }
+
+            changeImage();
+        })
+
+        //-----------------------------------------------------------------
+
+        //Modal
+        var modal1 = document.getElementById("infographicModal");
+        var img1 = document.getElementById("infoG");
+        var close1 = document.getElementById("closeModal1");
+
+        img1.onclick=function(){
+            modal1.style.display="block";
+        }
+        close1.onclick=function(){
+            modal1.style.display="none";
+        }
+        window.onclick = function(event){
+            if(event.target==modal1){
+                modal1.style.display="none";
+            }
+        }
+
+        var modal2 = document.getElementById("billboardModal");
+        var img2 = document.getElementById("displayedImage");
+        var close2 = document.getElementById("closeModal2");
+
+        img2.onclick=function(){
+            modal2.style.display="block";
+        }
+        close2.onclick=function(){
+            modal2.style.display="none";
+        }
+        window.onclick = function(event){
+            if(event.target==modal2){
+                modal2.style.display="none";
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
