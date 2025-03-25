@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,7 +19,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Hello | Bronwyn Howell</title>
+    <title>Portfolio | Bronwyn Howell</title>
 </head>
 
 <body class="body-main">
@@ -38,10 +39,10 @@
                 <nav class="main-nav">
                     <ul>
                         <li id="navPortfolio">
-                            <a id="porLink" class="active-link" href="portfolio.html">Portfolio</a>
+                            <a id="porLink" class="active-link" href="portfolio">Portfolio</a>
                         </li>
                         <li id="navAbout">
-                            <a id="abtLink" href="about.html">About</a>
+                            <a id="abtLink" href="about">About</a>
                         </li>
                     </ul>
                 </nav>
@@ -61,9 +62,9 @@
                 <li><a href="#" id="aboLink">About</a></li>
             </ul>
             <ul class="prtMenu hidden">
-                <li><a href="webdev.html" id="webLink">Web Development</a></li>
-                <li><a href="illusmation.html" id="illLink">Illustration &amp; Animation</a></li>
-                <li><a href="videography.html" id="vidLink">Videography</a></li>
+                <li><a href="webdev" id="webLink">Web Development</a></li>
+                <li><a href="illusmation" id="illLink">Illustration &amp; Animation</a></li>
+                <li><a href="videography" id="vidLink">Videography</a></li>
                 <li>
                     <div class="mob-socials">
                         <a href="https://github.com/zawiho" target="_blank">
@@ -76,9 +77,9 @@
                 </li>
             </ul>
             <ul class="aboMenu hidden">
-                <li><a href="about.html#" id="bioLink">About Me</a></li>
-                <li><a href="about.html#expanchor" id="wrkLink">Work Experience</a></li>
-                <li><a href="about.html#name" id="conLink">Contact</a></li>
+                <li><a href="about#" id="bioLink">About Me</a></li>
+                <li><a href="about#expanchor" id="wrkLink">Work Experience</a></li>
+                <li><a href="about#name" id="conLink">Contact</a></li>
                 <li>
                     <div class="mob-socials">
                         <a href="https://github.com/zawiho" target="_blank">
@@ -93,27 +94,33 @@
         </nav>
     </div>
 
-    <div id="catNav" class="nav-div2 hidden" style="background-color: rgba(33, 34, 39, 0.9);">
+    <div class="nav-div2">
         <nav id="portfolioNav" class="cat-nav">
             <ul class="categories">
-                <li id="portFirst">
+                <li id="first">
                     <a href="webdev.html">Web Development</a>
                 </li>
-                <li id="portSecond">
-                    <a href="illusmation.html">Illustration &amp; Animation</a>
+                <li id="second">
+                    <a href="illusmation.html">Illustration & Animation</a>
                 </li>
-                <li id="portThird">
+                <li id="third">
                     <a href="videography.html">Videography</a>
                 </li>
             </ul>
         </nav>
         <nav id="aboutNav" class="cat-nav hidden">
             <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="about.html#expanchor">Work Experience</a></li>
-                <li><a href="about.html#name">Contact</a></li>
+                <li id="aboutLink">
+                    <a href="about.html">About Me</a>
+                </li id="expLink">
+                <li>
+                    <a href="about.html#expanchor">Work Experience</a>
+                </li>
+                <li id="contactLink">
+                    <a href="about.html#name">Contact</a>
+                </li>
             </ul>
-        </nav>
+        </nav>    
     </div>
 
 <main class="gallery">
