@@ -159,7 +159,7 @@
                         <h6>Social Issue Campaign Webpage</h6>
                     </a>
                     <a href="tips.html" class="thumb">
-                        <img src="images/tips-thumb.jpg" alt="JavaScript Tip Calculator" width=300>
+                        <img src="images/tips-thumb1.jpg" alt="JavaScript Tip Calculator" width=300>
                         <h5>"Tip Calculator"</h5>
                         <h6>JavaScript Web App</h6>
                     </a>
