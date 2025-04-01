@@ -1,35 +1,120 @@
-<?php
-    $title="Greenleaf";
-    $selected="main";
-    $category="webdev";
-    $pagetype="project";
-    require('header.php');
-?>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Portfolio | Bronwyn Howell</title>
+</head>
+
+<body class="body-main">
+    <header class="header-main">
+        <div class="header-div">
+            <div class="batty">
+                <a href="index.html">
+                    <img src="images/batty.svg" width="240">
+                </a>
+            </div>
+            <a href="index.html">
+                <h1 class="zach-heading">
+                    Bronwyn Howell
+                </h1>
+            </a>
+            <div class="nav-div1">
+                <nav class="main-nav">
+                    <ul>
+                        <li id="navPortfolio">
+                            <a id="porLink" href="portfolio">Portfolio</a>
+                        </li>
+                        <li id="navAbout">
+                            <a id="abtLink" class="active-link" href="about">About</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav-mob1">
+                <a href="#" class="toggle-nav">
+                    <span id="hamburger">☰</span>
+                    <span id="close" class="hidden">×</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div id="navMob2" class="hidden">
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="#" id="prtLink">Portfolio</a></li>
+                <li><a href="#" id="aboLink">About</a></li>
+            </ul>
+            <ul class="prtMenu hidden">
+                <li><a href="webdev" id="webLink">Web Development</a></li>
+                <li><a href="illusmation" id="illLink">Illustration &amp; Animation</a></li>
+                <li><a href="videography" id="vidLink">Videography</a></li>
+                <li>
+                    <div class="mob-socials">
+                        <a href="https://github.com/zawiho" target="_blank">
+                            <img src="images/giticon.svg" width="50">
+                        </a>
+                        <a href="https://www.linkedin.com/in/zachary-howell-she-her/" target="_blank">
+                            <img src="images/liicon.svg" width="50">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="aboMenu hidden">
+                <li><a href="about#" id="bioLink">About Me</a></li>
+                <li><a href="about#expanchor" id="wrkLink">Work Experience</a></li>
+                <li><a href="about#name" id="conLink">Contact</a></li>
+                <li>
+                    <div class="mob-socials">
+                        <a href="https://github.com/zawiho" target="_blank">
+                            <img src="images/giticon.svg" width="50">
+                        </a>
+                        <a href="https://www.linkedin.com/in/zachary-howell-she-her/" target="_blank">
+                            <img src="images/liicon.svg" width="50">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
 <div class="nav-div2">
     <nav id="portfolioNav" class="cat-nav">
         <ul class="categories">
             <li id="first" class="active-nav">
-                <a href="webdev.php">Web Development</a>
+                <a href="webdev.html">Web Development</a>
             </li>
             <li id="second">
-                <a href="illusmation.php">Illustration & Animation</a>
+                <a href="illusmation.html">Illustration & Animation</a>
             </li>
             <li id="third">
-                <a href="videography.php">Videography</a>
+                <a href="videography.html">Videography</a>
             </li>
         </ul>
     </nav>
     <nav id="aboutNav" class="cat-nav hidden">
         <ul>
             <li>
-                <a href="about.php" id="aboutLink">About Me</a>
+                <a href="about.html" id="aboutLink">About Me</a>
             </li>
             <li>
-                <a href="about.php#expanchor" id="expLink">Work Experience</a>
+                <a href="about.html#expanchor" id="expLink">Work Experience</a>
             </li>
             <li>
-                <a href="about.php#name" id="contactLink">Contact</a>
+                <a href="about.html#name" id="contactLink">Contact</a>
             </li>
         </ul>
     </nav>    
@@ -58,32 +143,32 @@
         <h2 class="gallery-h3">Related Work</h2>
             <div class="related">
                 <div class="side-scroll">
-                    <a href="dino.php" class="thumb">
+                    <a href="dino.html" class="thumb">
                         <img src="images/dino-thumb.jpg" alt="Ancient Avians JavaScript Boardgame" width=300>
                         <h5>"Ancient Avians"</h5>
                         <h6>JavaScript Boardgame</h6>
                     </a>
-                    <a href="btwd.php" class="thumb">
+                    <a href="btwd.html" class="thumb">
                         <img src="images/btwd-thumb.jpg" alt="Bike to Work Day mobile app" width=300>
                         <h5>"Bike to Work Day"</h5>
                         <h6>Mobile App</h6>
                     </a>
-                    <a href="renew.php" class="thumb">
+                    <a href="renew.html" class="thumb">
                         <img src="images/renew-thumb.jpg" alt="Renew Alberta Social Issue Campaign Webpage" width=300>
                         <h5>"renewAlberta"</h5>
                         <h6>Social Issue Campaign Webpage</h6>
                     </a>
-                    <a href="tips.php" class="thumb">
+                    <a href="tips.html" class="thumb">
                         <img src="images/tips-thumb.jpg" alt="JavaScript Tip Calculator" width=300>
                         <h5>"Tip Calculator"</h5>
                         <h6>JavaScript Web App</h6>
                     </a>
-                    <a href="swr.php" class="thumb">
+                    <a href="swr.html" class="thumb">
                         <img src="images/swr-thumb.jpg" alt="Spirit Winds Ranch WordPress Website" width=300>
                         <h5>"Spirit Winds Ranch"</h5>
                         <h6>Non-profit Client WordPress Site</h6>
                     </a>
-                    <a href="shang.php" class="thumb">
+                    <a href="shang.html" class="thumb">
                         <img src="images/shang-thumb.jpg" alt="Shangri-La Resort WordPress Website" width=300>
                         <h5>"Shangri-La Resort"</h5>
                         <h6>WordPress Site</h6>
@@ -93,4 +178,28 @@
     </section>
 </main>
 
-<?php require('footer.php'); ?>
+<div class="socials">
+    <a href="https://github.com/zawiho" target="_blank">
+        <img src="images/git.png" width="25">
+    </a>
+    <a href="https://www.linkedin.com/in/zachary-howell-she-her/" target="_blank">
+        <img src="images/linked.png" width="25">
+    </a>
+</div>
+
+<p id="zackToTop">Back to Top</p>
+<div class="footer-img">
+    <a href="#">
+        <img id="monogram" src="images/logo.png" alt="Bronwyn Howell logo" width="80">
+    </a>
+</div>
+<footer>
+    <small>Copyright © 2025, Bronwyn Howell. All Rights Reserved.</small>
+</footer>
+
+<script src="nav.js"></script>
+<script src="foot.js"></script>
+<script src="sidescroll.js"></script>
+</body>
+
+</html>
