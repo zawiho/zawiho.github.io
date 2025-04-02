@@ -152,7 +152,7 @@ thumb3.addEventListener('mouseover', function(){
     displayedImage.style.opacity=1;
     displayedImage.src="images/budbud.jpg";
     displayedImage.alt="Bud bud Explainer Animation by Bronwyn Howell";
-    hyperlink.href="swr.html";
+    hyperlink.href="budbud.html";
     slideCaption.innerHTML="\"Bud Bud Explainer Animation\"";
 })
 thumb3.addEventListener('mouseout', function(){
