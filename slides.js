@@ -1,4 +1,4 @@
-const gallery=["dino.jpg","kitten.jpg","budbud.jpg","courage1.jpg","renew.jpg","greenleaf.jpg"];
+const gallery=["dino.jpg","kitten.jpg","budbud.png","courage1.jpg","renew.jpg","greenleaf.jpg"];
 const alt=["Ancient Avians JavaScript game","Kitten is Angry Music Video","Bud Bud Explainer Animation","Camp Courage Calgary Highlight Video #1","Renew Alberta Social Campaign Website","greenleaf eCommerce Prototype Website"];
 const url=["dino.html","kitten.html","swr.html","courage1.html","renewalberta.html","greenleaf.html"];
 
