@@ -1,6 +1,6 @@
 const gallery=["dino.jpg","kitten.jpg","winds.jpg","courage1.jpg","renew.jpg","greenleaf.jpg"];
 const alt=["Ancient Avians JavaScript game","Kitten is Angry Music Video","Spirit Winds Ranch WordPress Website","Camp Courage Calgary Highlight Video #1","Renew Alberta Social Campaign Website","greenleaf eCommerce Prototype Website"];
-const url=["dino.php","kitten.php","swr.php","courage1.php","renewalberta.php","greenleaf.php"];
+const url=["dino.html","kitten.html","swr.html","courage1.html","renewalberta.html","greenleaf.html"];
 
 let show;
 let fadingIn;
@@ -110,7 +110,7 @@ thumb1.addEventListener('mouseover', function(){
     displayedImage.style.opacity=1;
     displayedImage.src="images/dino.jpg";
     displayedImage.alt="Ancient Avians JavaScript game by Zachary Howell";
-    hyperlink.href="dino.php";
+    hyperlink.href="dino.html";
     slideCaption.innerHTML="\"Ancient Avians JavaScript game\"";
 })
 thumb1.addEventListener('mouseout', function(){
@@ -131,7 +131,7 @@ thumb2.addEventListener('mouseover', function(){
     displayedImage.style.opacity=1;
     displayedImage.src="images/kitten.jpg";
     displayedImage.alt="Kitten is Angry Music Video by Zachary Howell";
-    hyperlink.href="kitten.php";
+    hyperlink.href="kitten.html";
     slideCaption.innerHTML="\"Kitten is Angry Music Video\"";
 })
 thumb2.addEventListener('mouseout', function(){
@@ -152,7 +152,7 @@ thumb3.addEventListener('mouseover', function(){
     displayedImage.style.opacity=1;
     displayedImage.src="images/winds.jpg";
     displayedImage.alt="Spirit Winds Ranch WordPress Website by Zachary Howell";
-    hyperlink.href="swr.php";
+    hyperlink.href="swr.html";
     slideCaption.innerHTML="\"Spirit Winds Ranch WordPress Website\"";
 })
 thumb3.addEventListener('mouseout', function(){
@@ -173,7 +173,7 @@ thumb4.addEventListener('mouseover', function(){
     displayedImage.style.opacity=1;
     displayedImage.src="images/courage1.jpg";
     displayedImage.alt="Camp Courage Calgary Highlight Video #1 by Zachary Howell";
-    hyperlink.href="courage1.php";
+    hyperlink.href="courage1.html";
     slideCaption.innerHTML="\"Camp Courage Calgary Highlight Video #1\"";
 })
 thumb4.addEventListener('mouseout', function(){
@@ -194,7 +194,7 @@ thumb5.addEventListener('mouseover', function(){
     displayedImage.style.opacity=1;
     displayedImage.src="images/renew.jpg";
     displayedImage.alt="Renew Alberta Social Campaign Website by Zachary Howell";
-    hyperlink.href="renew.php";
+    hyperlink.href="renew.html";
     slideCaption.innerHTML="\"Renew Alberta Social Campaign Website\"";
 })
 thumb5.addEventListener('mouseout', function(){
@@ -215,7 +215,7 @@ thumb6.addEventListener('mouseover', function(){
     displayedImage.style.opacity=1;
     displayedImage.src="images/greenleaf.jpg";
     displayedImage.alt="greenleaf eCommerce Prototype Website by Zachary Howell";
-    hyperlink.href="greenleaf.php";
+    hyperlink.href="greenleaf.html";
     slideCaption.innerHTML="\"greenleaf eCommerce Prototype Website\"";
 })
 thumb6.addEventListener('mouseout', function(){
