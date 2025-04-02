@@ -1,5 +1,5 @@
-const gallery=["dino.jpg","kitten.jpg","winds.jpg","courage1.jpg","renew.jpg","greenleaf.jpg"];
-const alt=["Ancient Avians JavaScript game","Kitten is Angry Music Video","Spirit Winds Ranch WordPress Website","Camp Courage Calgary Highlight Video #1","Renew Alberta Social Campaign Website","greenleaf eCommerce Prototype Website"];
+const gallery=["dino.jpg","kitten.jpg","budbud.jpg","courage1.jpg","renew.jpg","greenleaf.jpg"];
+const alt=["Ancient Avians JavaScript game","Kitten is Angry Music Video","Bud Bud Explainer Animation","Camp Courage Calgary Highlight Video #1","Renew Alberta Social Campaign Website","greenleaf eCommerce Prototype Website"];
 const url=["dino.html","kitten.html","swr.html","courage1.html","renewalberta.html","greenleaf.html"];
 
 let show;
@@ -26,7 +26,7 @@ function autoImage(){
     }
 
     displayedImage.src="images/"+gallery[i];
-    displayedImage.alt=alt[i]+" by Zachary Howell";
+    displayedImage.alt=alt[i]+" by Bronwyn Howell";
     hyperlink.href=url[i];
     slideCaption.innerHTML="\""+alt[i]+"\"";
     // console.log(i);
@@ -109,7 +109,7 @@ thumb1.addEventListener('mouseover', function(){
     clearTimeout(delayFadeIn);
     displayedImage.style.opacity=1;
     displayedImage.src="images/dino.jpg";
-    displayedImage.alt="Ancient Avians JavaScript game by Zachary Howell";
+    displayedImage.alt="Ancient Avians JavaScript game by Bronwyn Howell";
     hyperlink.href="dino.html";
     slideCaption.innerHTML="\"Ancient Avians JavaScript game\"";
 })
@@ -130,7 +130,7 @@ thumb2.addEventListener('mouseover', function(){
     clearTimeout(delayFadeIn);
     displayedImage.style.opacity=1;
     displayedImage.src="images/kitten.jpg";
-    displayedImage.alt="Kitten is Angry Music Video by Zachary Howell";
+    displayedImage.alt="Kitten is Angry Music Video by Bronwyn Howell";
     hyperlink.href="kitten.html";
     slideCaption.innerHTML="\"Kitten is Angry Music Video\"";
 })
@@ -150,10 +150,10 @@ thumb3.addEventListener('mouseover', function(){
     clearTimeout(delayImage);
     clearTimeout(delayFadeIn);
     displayedImage.style.opacity=1;
-    displayedImage.src="images/winds.jpg";
-    displayedImage.alt="Spirit Winds Ranch WordPress Website by Zachary Howell";
+    displayedImage.src="images/budbud.jpg";
+    displayedImage.alt="Bud bud Explainer Animation by Bronwyn Howell";
     hyperlink.href="swr.html";
-    slideCaption.innerHTML="\"Spirit Winds Ranch WordPress Website\"";
+    slideCaption.innerHTML="\"Bud Bud Explainer Animation\"";
 })
 thumb3.addEventListener('mouseout', function(){
     thumb3.style.filter="grayscale(100%)";
@@ -172,7 +172,7 @@ thumb4.addEventListener('mouseover', function(){
     clearTimeout(delayFadeIn);
     displayedImage.style.opacity=1;
     displayedImage.src="images/courage1.jpg";
-    displayedImage.alt="Camp Courage Calgary Highlight Video #1 by Zachary Howell";
+    displayedImage.alt="Camp Courage Calgary Highlight Video #1 by Bronwyn Howell";
     hyperlink.href="courage1.html";
     slideCaption.innerHTML="\"Camp Courage Calgary Highlight Video #1\"";
 })
@@ -193,7 +193,7 @@ thumb5.addEventListener('mouseover', function(){
     clearTimeout(delayFadeIn);
     displayedImage.style.opacity=1;
     displayedImage.src="images/renew.jpg";
-    displayedImage.alt="Renew Alberta Social Campaign Website by Zachary Howell";
+    displayedImage.alt="Renew Alberta Social Campaign Website by Bronwyn Howell";
     hyperlink.href="renew.html";
     slideCaption.innerHTML="\"Renew Alberta Social Campaign Website\"";
 })
@@ -214,7 +214,7 @@ thumb6.addEventListener('mouseover', function(){
     clearTimeout(delayFadeIn);
     displayedImage.style.opacity=1;
     displayedImage.src="images/greenleaf.jpg";
-    displayedImage.alt="greenleaf eCommerce Prototype Website by Zachary Howell";
+    displayedImage.alt="greenleaf eCommerce Prototype Website by Bronwyn Howell";
     hyperlink.href="greenleaf.html";
     slideCaption.innerHTML="\"greenleaf eCommerce Prototype Website\"";
 })
